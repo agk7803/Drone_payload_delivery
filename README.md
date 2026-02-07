@@ -25,7 +25,7 @@ The Raspberry Pi handles mission logic, telemetry monitoring, and payload deploy
 <h2>⚙️ System Workflow</h2>
 
 <ol>
-  <li>Waypoints are uploaded using Mission Planner.</li>
+  <li>Waypoints are uploaded in the Mission.py script.</li>
   <li>Drone arms and takes off autonomously.</li>
   <li>Raspberry Pi monitors mission progress.</li>
   <li>Payload is released at the target waypoint.</li>
@@ -47,8 +47,8 @@ The Raspberry Pi handles mission logic, telemetry monitoring, and payload deploy
 <h3>2️⃣ arm_indoors.py</h3>
 <p><b>Purpose:</b> Indoor/bench testing</p>
 <ul>
-  <li>Arms the drone without full mission execution</li>
-  <li>Performs low-altitude or no-lift testing</li>
+  <li>Arms the drone in STABILIZE mode</li>
+  <li>Performs arm without position estimate</li>
   <li>Useful for hardware and safety checks</li>
 </ul>
 
